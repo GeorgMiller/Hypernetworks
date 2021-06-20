@@ -1,0 +1,462 @@
+----------------------------------------
+  generation   |  0
+  reward       |  -1.15
+  actor loss   |  0.6987778
+  criic loss   |  0.18238144
+  entropy loss |  -0.13862933
+  diversity    |  79.99989
+  loss         |  87.18433
+  learningrate |  4.9999875e-05
+  left         |  0.25
+  right        |  0.25
+  kl diversity |  -6.1564207
+  cos actions  |  79.99989
+----------------------------------------
+----------------------------------------
+  generation   |  5
+  reward       |  -0.9804166666666664
+  actor loss   |  0.7166075
+  criic loss   |  0.18256739
+  entropy loss |  -0.13862835
+  diversity    |  79.99991
+  loss         |  87.10077
+  learningrate |  4.999925e-05
+  left         |  0.20833333333333334
+  right        |  0.20833333333333334
+  kl diversity |  -4.947813
+  cos actions  |  79.99991
+----------------------------------------
+----------------------------------------
+  generation   |  10
+  reward       |  -0.8721590909090904
+  actor loss   |  0.6421597
+  criic loss   |  0.12653263
+  entropy loss |  -0.13862923
+  diversity    |  79.99968
+  loss         |  84.9103
+  learningrate |  4.9998624e-05
+  left         |  0.25
+  right        |  0.2727272727272727
+  kl diversity |  -6.577825
+  cos actions  |  79.99968
+----------------------------------------
+----------------------------------------
+  generation   |  15
+  reward       |  -0.9467999999999992
+  actor loss   |  0.67824537
+  criic loss   |  0.14112616
+  entropy loss |  -0.13862707
+  diversity    |  79.9998
+  loss         |  86.92654
+  learningrate |  4.9997994e-05
+  left         |  0.22
+  right        |  0.24
+  kl diversity |  -6.569084
+  cos actions  |  79.9998
+----------------------------------------
+----------------------------------------
+  generation   |  20
+  reward       |  -0.9873999999999993
+  actor loss   |  0.6869278
+  criic loss   |  0.12679163
+  entropy loss |  -0.13862672
+  diversity    |  79.99979
+  loss         |  86.78704
+  learningrate |  4.999737e-05
+  left         |  0.18
+  right        |  0.2
+  kl diversity |  -6.4686728
+  cos actions  |  79.99979
+----------------------------------------
+----------------------------------------
+  generation   |  25
+  reward       |  -1.027799999999999
+  actor loss   |  0.6931833
+  criic loss   |  0.108818345
+  entropy loss |  -0.1386288
+  diversity    |  79.99965
+  loss         |  86.57281
+  learningrate |  4.9996743e-05
+  left         |  0.1
+  right        |  0.12
+  kl diversity |  -5.260692
+  cos actions  |  79.99965
+----------------------------------------
+----------------------------------------
+  generation   |  30
+  reward       |  -0.9869999999999992
+  actor loss   |  0.6865129
+  criic loss   |  0.06808469
+  entropy loss |  -0.1386256
+  diversity    |  79.99984
+  loss         |  86.16613
+  learningrate |  4.9996117e-05
+  left         |  0.1
+  right        |  0.1
+  kl diversity |  -4.600925
+  cos actions  |  79.99984
+----------------------------------------
+----------------------------------------
+  generation   |  35
+  reward       |  -1.109199999999999
+  actor loss   |  0.72003007
+  criic loss   |  0.02012856
+  entropy loss |  -0.13862303
+  diversity    |  79.9993
+  loss         |  85.689545
+  learningrate |  4.999549e-05
+  left         |  0.08
+  right        |  0.06
+  kl diversity |  -6.6458793
+  cos actions  |  79.9993
+----------------------------------------
+----------------------------------------
+  generation   |  40
+  reward       |  -1.066899999999999
+  actor loss   |  0.6618838
+  criic loss   |  0.020017782
+  entropy loss |  -0.13861464
+  diversity    |  79.996994
+  loss         |  84.641396
+  learningrate |  4.9994866e-05
+  left         |  0.16
+  right        |  0.14
+  kl diversity |  -2.98066
+  cos actions  |  79.996994
+----------------------------------------
+----------------------------------------
+  generation   |  45
+  reward       |  -1.107699999999999
+  actor loss   |  0.6773558
+  criic loss   |  0.012481612
+  entropy loss |  -0.13860606
+  diversity    |  79.996826
+  loss         |  85.736824
+  learningrate |  4.999424e-05
+  left         |  0.14
+  right        |  0.16
+  kl diversity |  -5.709622
+  cos actions  |  79.996826
+----------------------------------------
+----------------------------------------
+  generation   |  50
+  reward       |  -1.0661999999999991
+  actor loss   |  0.6688672
+  criic loss   |  0.021054778
+  entropy loss |  -0.13861199
+  diversity    |  79.99865
+  loss         |  85.69213
+  learningrate |  4.9993614e-05
+  left         |  0.12
+  right        |  0.1
+  kl diversity |  -6.5763607
+  cos actions  |  79.99865
+----------------------------------------
+----------------------------------------
+  generation   |  55
+  reward       |  -0.9855999999999991
+  actor loss   |  0.7587058
+  criic loss   |  0.05527449
+  entropy loss |  -0.13861708
+  diversity    |  79.99355
+  loss         |  85.81259
+  learningrate |  4.999299e-05
+  left         |  0.16
+  right        |  0.18
+  kl diversity |  -5.4327497
+  cos actions  |  79.99355
+----------------------------------------
+----------------------------------------
+  generation   |  60
+  reward       |  -0.9035999999999994
+  actor loss   |  0.6806148
+  criic loss   |  0.0248751
+  entropy loss |  -0.13848469
+  diversity    |  79.977066
+  loss         |  85.73755
+  learningrate |  4.9992363e-05
+  left         |  0.18
+  right        |  0.16
+  kl diversity |  -7.3446527
+  cos actions  |  79.977066
+----------------------------------------
+----------------------------------------
+  generation   |  65
+  reward       |  -0.9452999999999991
+  actor loss   |  -0.12498976
+  criic loss   |  0.2226533
+  entropy loss |  -0.13801499
+  diversity    |  79.89032
+  loss         |  84.43242
+  learningrate |  4.9991737e-05
+  left         |  0.2
+  right        |  0.16
+  kl diversity |  -7.6586604
+  cos actions  |  79.89032
+----------------------------------------
+----------------------------------------
+  generation   |  70
+  reward       |  -0.6147999999999995
+  actor loss   |  0.69170594
+  criic loss   |  0.07160345
+  entropy loss |  -0.13511051
+  diversity    |  78.177124
+  loss         |  80.69512
+  learningrate |  4.999111e-05
+  left         |  0.3
+  right        |  0.24
+  kl diversity |  -7.7022066
+  cos actions  |  78.177124
+----------------------------------------
+----------------------------------------
+  generation   |  75
+  reward       |  -0.36589999999999995
+  actor loss   |  -0.31154186
+  criic loss   |  0.3188168
+  entropy loss |  -0.13846786
+  diversity    |  75.19251
+  loss         |  76.93433
+  learningrate |  4.9990485e-05
+  left         |  0.4
+  right        |  0.32
+  kl diversity |  -8.793022
+  cos actions  |  75.19251
+----------------------------------------
+----------------------------------------
+  generation   |  80
+  reward       |  -0.5296999999999997
+  actor loss   |  -0.5194435
+  criic loss   |  0.44526315
+  entropy loss |  -0.12278421
+  diversity    |  75.17517
+  loss         |  80.19023
+  learningrate |  4.998986e-05
+  left         |  0.3
+  right        |  0.22
+  kl diversity |  -8.429675
+  cos actions  |  75.17517
+----------------------------------------
+----------------------------------------
+  generation   |  85
+  reward       |  -0.8196999999999994
+  actor loss   |  0.55947995
+  criic loss   |  0.077967644
+  entropy loss |  -0.12870854
+  diversity    |  55.616962
+  loss         |  61.236
+  learningrate |  4.9989234e-05
+  left         |  0.2
+  right        |  0.1
+  kl diversity |  -7.993815
+  cos actions  |  55.616962
+----------------------------------------
+----------------------------------------
+  generation   |  90
+  reward       |  -1.0674999999999992
+  actor loss   |  0.4781899
+  criic loss   |  0.056784075
+  entropy loss |  -0.0071008885
+  diversity    |  52.11028
+  loss         |  56.506165
+  learningrate |  4.998861e-05
+  left         |  0.06
+  right        |  0.02
+  kl diversity |  -8.555883
+  cos actions  |  52.11028
+----------------------------------------
+----------------------------------------
+  generation   |  95
+  reward       |  -1.149999999999999
+  actor loss   |  0.4055742
+  criic loss   |  0.015287429
+  entropy loss |  -0.017940216
+  diversity    |  50.003517
+  loss         |  54.59336
+  learningrate |  4.9987982e-05
+  left         |  0.0
+  right        |  0.0
+  kl diversity |  -9.3961935
+  cos actions  |  50.003517
+----------------------------------------
+----------------------------------------
+  generation   |  100
+  reward       |  -1.149999999999999
+  actor loss   |  1.0744349
+  criic loss   |  0.015194902
+  entropy loss |  -0.027505267
+  diversity    |  58.524677
+  loss         |  64.15671
+  learningrate |  4.998736e-05
+  left         |  0.0
+  right        |  0.0
+  kl diversity |  -8.7650385
+  cos actions  |  58.524677
+----------------------------------------
+----------------------------------------
+  generation   |  105
+  reward       |  -1.149999999999999
+  actor loss   |  0.5196721
+  criic loss   |  0.021249698
+  entropy loss |  -0.0062730783
+  diversity    |  79.99963
+  loss         |  84.95384
+  learningrate |  4.9986735e-05
+  left         |  0.0
+  right        |  0.0
+  kl diversity |  -7.4478436
+  cos actions  |  79.99963
+----------------------------------------
+----------------------------------------
+  generation   |  110
+  reward       |  -1.149999999999999
+  actor loss   |  0.5227121
+  criic loss   |  0.026349
+  entropy loss |  -0.060772188
+  diversity    |  50.776066
+  loss         |  56.82873
+  learningrate |  4.998611e-05
+  left         |  0.0
+  right        |  0.0
+  kl diversity |  -10.058922
+  cos actions  |  50.776066
+----------------------------------------
+----------------------------------------
+  generation   |  115
+  reward       |  -1.149999999999999
+  actor loss   |  0.48971924
+  criic loss   |  0.019321177
+  entropy loss |  -0.043487232
+  diversity    |  40.23378
+  loss         |  44.50708
+  learningrate |  4.9985483e-05
+  left         |  0.0
+  right        |  0.0
+  kl diversity |  -8.111115
+  cos actions  |  40.23378
+----------------------------------------
+----------------------------------------
+  generation   |  120
+  reward       |  -1.149999999999999
+  actor loss   |  0.39347437
+  criic loss   |  0.01498956
+  entropy loss |  -0.0055105123
+  diversity    |  40.004486
+  loss         |  44.609333
+  learningrate |  4.9984857e-05
+  left         |  0.0
+  right        |  0.0
+  kl diversity |  -10.395404
+  cos actions  |  40.004486
+----------------------------------------
+----------------------------------------
+  generation   |  125
+  reward       |  -1.149999999999999
+  actor loss   |  0.43603542
+  criic loss   |  0.02044957
+  entropy loss |  -1.4500031e-07
+  diversity    |  80.0
+  loss         |  83.90918
+  learningrate |  4.998423e-05
+  left         |  0.0
+  right        |  0.0
+  kl diversity |  -6.6136603
+  cos actions  |  80.0
+----------------------------------------
+----------------------------------------
+  generation   |  130
+  reward       |  -1.149999999999999
+  actor loss   |  0.6653504
+  criic loss   |  0.02212618
+  entropy loss |  -0.003303576
+  diversity    |  37.466564
+  loss         |  43.14129
+  learningrate |  4.9983606e-05
+  left         |  0.0
+  right        |  0.0
+  kl diversity |  -10.805245
+  cos actions  |  37.466564
+----------------------------------------
+----------------------------------------
+  generation   |  135
+  reward       |  -1.149999999999999
+  actor loss   |  0.43029127
+  criic loss   |  0.019696323
+  entropy loss |  -1.5160826e-12
+  diversity    |  50.000023
+  loss         |  54.152622
+  learningrate |  4.998298e-05
+  left         |  0.0
+  right        |  0.0
+  kl diversity |  -9.73038
+  cos actions  |  50.000023
+----------------------------------------
+----------------------------------------
+  generation   |  140
+  reward       |  -1.149999999999999
+  actor loss   |  0.4159024
+  criic loss   |  0.024697524
+  entropy loss |  -8.082344e-06
+  diversity    |  79.99998
+  loss         |  84.12942
+  learningrate |  4.9982355e-05
+  left         |  0.0
+  right        |  0.0
+  kl diversity |  -7.9654713
+  cos actions  |  79.99998
+----------------------------------------
+----------------------------------------
+  generation   |  145
+  reward       |  -1.149999999999999
+  actor loss   |  1.0477896
+  criic loss   |  0.014397796
+  entropy loss |  -0.0034165964
+  diversity    |  39.880898
+  loss         |  45.038334
+  learningrate |  4.9981725e-05
+  left         |  0.0
+  right        |  0.0
+  kl diversity |  -8.843622
+  cos actions  |  39.880898
+----------------------------------------
+----------------------------------------
+  generation   |  150
+  reward       |  -1.149999999999999
+  actor loss   |  0.4785979
+  criic loss   |  0.020850651
+  entropy loss |  -1.0107161e-20
+  diversity    |  50.008133
+  loss         |  53.786053
+  learningrate |  4.99811e-05
+  left         |  0.0
+  right        |  0.0
+  kl diversity |  -9.549882
+  cos actions  |  50.008133
+----------------------------------------
+----------------------------------------
+  generation   |  155
+  reward       |  -1.149999999999999
+  actor loss   |  0.64988494
+  criic loss   |  0.020583706
+  entropy loss |  -0.008229821
+  diversity    |  50.202587
+  loss         |  54.868725
+  learningrate |  4.9980474e-05
+  left         |  0.0
+  right        |  0.0
+  kl diversity |  -7.8341694
+  cos actions  |  50.202587
+----------------------------------------
+----------------------------------------
+  generation   |  160
+  reward       |  -1.149999999999999
+  actor loss   |  0.5524789
+  criic loss   |  0.02592496
+  entropy loss |  -1.1750322e-08
+  diversity    |  40.000286
+  loss         |  44.35491
+  learningrate |  4.9979848e-05
+  left         |  0.0
+  right        |  0.0
+  kl diversity |  -7.694387
+  cos actions  |  40.000286
+----------------------------------------
