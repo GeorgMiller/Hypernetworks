@@ -8,7 +8,6 @@ import graph
 import logger
 import hypernetwork
 from sklearn.metrics.pairwise import rbf_kernel, linear_kernel
-import tensorflow_probability as tfp
 from scipy.spatial.distance import pdist, squareform
 import scipy
 

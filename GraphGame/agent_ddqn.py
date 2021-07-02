@@ -8,7 +8,6 @@ import graph
 import logger
 import hypernetwork
 from sklearn.metrics.pairwise import rbf_kernel, linear_kernel
-import tensorflow_probability as tfp
 from scipy.spatial.distance import pdist, squareform
 import scipy
 
@@ -254,10 +253,10 @@ class Agent():
                 # Also make new lists for the cosine calculation of the probabilites
                 self.embedding = [[] for _ in range(self.batch_size)] 
                 self.loss_acc = 0
-                w1a, w2, w4 = self.hypernetwork(z,self.batch_size)
+                w1, w2, w4 = self.hypernetwork(z,self.batch_size)
                 
                 # Reshape it for the online network and eventually update the target networks
-                weights_online_network = tf.concat(axis=1, values=[tf.reshape(w1a,(self.batch_size,-1)), tf.reshape(w2,(self.batch_size,-1)),tf.reshape(w4,(self.batch_size,-1))])
+                weights_online_network = tf.concat(axis=1, values=[tf.reshape(w1,(self.batch_size,-1)), tf.reshape(w2,(self.batch_size,-1)),tf.reshape(w4,(self.batch_size,-1))])
                 if step % self.update_every == 0:
                     weights_target_network = weights_online_network
 

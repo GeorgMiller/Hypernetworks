@@ -1,11 +1,12 @@
+import tensorflow as tf 
+import keras
+
 import agent_a2c
 import agent_ddqn
 import agent_genetic
 import agent_ga
 import logger 
 import numpy as np 
-import tensorflow as tf 
-import keras
 import tensorflow.keras.initializers as init
 
 seed = 1
@@ -76,8 +77,8 @@ def normal_run_learning_rate():
 
 def hypernetwork_learning_rate():
     # Then Hypernetwork is initialized and also trained for different learning rates with batch_size 1
-    lamBdas = [0.2, 1, 0.5]
-    path = 'experiments/NEW_hypernetwork_learning_rate_ddqn_cos_lambdas_batch_size_2'
+    lamBdas = [1.5, 1.3, 1.15, 1, 0.85, 0.75]
+    path = 'experiments/NEWWW_hypernetwork_learning_rate_ddqn_cos_lambdas_batch_size_2'
 
     for row, lamBda in enumerate(lamBdas):
         worker = agent_ddqn.Agent(epochs,
@@ -94,7 +95,7 @@ def hypernetwork_learning_rate():
                             row)
         worker.train_hypernetwork()
 
-#hypernetwork_learning_rate()
+hypernetwork_learning_rate()
 
 def hypernetwork_weight_init():
     # The best learningrate is selected and different weight initializations tested

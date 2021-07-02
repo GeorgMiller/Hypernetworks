@@ -1,5 +1,5 @@
+#import keras
 import tensorflow as tf 
-import keras
 import numpy as np 
 from keras.layers import Dense
 
@@ -8,7 +8,6 @@ import logger
 import hypernetwork
 #from utils import mutual_info, cosine_actions, cosine_weights, KL_estimator
 from sklearn.metrics.pairwise import rbf_kernel, linear_kernel
-import tensorflow_probability as tfp
 from scipy.spatial.distance import pdist, squareform
 import scipy
             
@@ -214,39 +213,7 @@ class Agent():
                         loss_actor = tf.math.reduce_mean(tf.math.maximum(r1,r2), axis=None) #- entropy_loss
                         grads = tape.gradient(loss_actor, self.actor.trainable_variables)
                         self.optimizer.apply_gradients(zip(grads,self.actor.trainable_variables))
-                    '''
 
-                    with tf.GradientTape() as tape:
-                        
-                        values = self.critic(states)
-                        next_values = self.critic(next_states)
-                        
-                        loss_critic = tf.reduce_mean(tf.math.square(values-rewards))*0.5
-
-                        grads = tape.gradient(loss_critic, self.critic.trainable_variables)
-                        self.optimizer.apply_gradients(zip(grads,self.critic.trainable_variables))
-
-                    with tf.GradientTape() as tape:
-
-                        predictions = self.actor(states)
-
-                        advantages = rewards - values + self.gamma*next_values*np.invert(dones)
-                        advantages = tf.reshape(advantages, (-1))
-                        pred = tf.reduce_sum(predictions*actions, axis=1)
-                        log_pred =tf.math.log(pred + 1e-9)
-
-                        entropy_coeff = 0.1
-                        z0 = tf.reduce_sum(predictions + self.zero_fixer, axis = 1)
-                        z0 = tf.stack([z0,z0,z0,z0], axis=-1)
-                        p0 = predictions / z0 
-                        entropy = tf.reduce_sum(p0 * (tf.math.log(p0 + self.zero_fixer)), axis=-1)
-                        mean_entropy = tf.reduce_mean(entropy) 
-                        entropy_loss =  mean_entropy * entropy_coeff 
-
-                        loss_actor = - tf.reduce_mean(log_pred*advantages) + entropy_loss
-                        grads = tape.gradient(loss_actor, self.actor.trainable_variables)
-                        self.optimizer.apply_gradients(zip(grads,self.actor.trainable_variables))
-                        '''
             if step % 5 == 0:
                 
                 winrate = self.average[-1]
@@ -516,29 +483,13 @@ class Agent():
         for i in range(self.batch_size):
             X.append(tf.reshape(self.cosine_probs[i],-1))
 
-        #X = (X - tf.math.reduce_mean(X, axis=0))/(tf.math.reduce_std(X, axis=0)+self.zero_fixer)
-        #X = tf.clip_by_value(X, -2, 2)
         matrix = []
         for i in range(4):
             for j in range(4): 
                 matrix.append(tf.reduce_mean(tf.exp(-tf.math.squared_difference(X[i],X[j]))) - self.zero_fixer)
         matrix = tf.reshape(matrix, (4,4))
-
-        #print(matrix)
-
         kernel = rbf_kernel(X)
-
-        expanded_a = tf.expand_dims(X, 1)
-        expanded_b = tf.expand_dims(X, 0)
-        #matrix = tf.reduce_sum(tf.math.exp(- tf.math.squared_difference(expanded_a, expanded_b)), 2)
-        kernel2 = tfp.math.psd_kernels.ExponentiatedQuadratic()
-        #value = kernel2.apply(X,X)
         dets = tf.linalg.det(matrix)
-        #dets = (dets - tf.math.reduce_mean(dets))/(tf.math.reduce_std(dets) + self.zero_fixer)
-
-        d = tf.linalg.det(kernel)
-
-        print(dets)
         p = tf.reduce_mean(matrix, axis=None)
         return - dets
 
@@ -591,7 +542,8 @@ class Agent():
             
             running_add = running_add * gamma + reward[i]
             discounted_r[i] = running_add
-
+            
+        # Dont use normalization here
         #discounted_r -= np.mean(discounted_r) # normalizing the result
         #discounted_r /= np.std(discounted_r) + self.zero_fixer
        

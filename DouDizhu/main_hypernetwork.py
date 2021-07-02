@@ -93,7 +93,6 @@ class HyperAgent(object):
                 self.embedding = [[] for _ in range(self.batch_size)] 
                 self.loss_acc = 0
                 w1, w2, w3 = self.hypernetwork(z,self.batch_size)
-                #print(self.hypernetwork.summary())
                 
                 # Reshape it for the online network and eventually update the target networks
                 weights_online_network = tf.concat(axis=1, values=[tf.reshape(w1,(self.batch_size,-1)), tf.reshape(w2,(self.batch_size,-1)),tf.reshape(w3,(self.batch_size,-1))])
@@ -104,7 +103,6 @@ class HyperAgent(object):
                 trajectories, _ = self.env.run(is_training=True)
                 _ = self.agent.target_network(np.expand_dims(trajectories[0][0][0]['obs'], 0))
 
-                #print(self.hypernetwork.summary())
                 # For each worker first the weights are set and then one batch calculated and added to the overall loss
                 for thread in range(self.batch_size):
 
@@ -263,9 +261,9 @@ class Hypernetwork(keras.Model):
 
     def call(self, inputs, batch_size):
 
-        layer_1 = 512 #512/2
-        layer_2 = 512 #512/2
-        layer_3 = 309 #309/3
+        layer_1 = 512 
+        layer_2 = 512 
+        layer_3 = 309 
 
         embedding = 15
 
